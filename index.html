@@ -1,0 +1,44 @@
+<html>
+    <script>
+        var responses =[
+            "Working as written",
+            "It's a Unintentional Feature",
+            "It works as foreseen",
+            "Intellisense has no default fix",
+            "We have noticed",
+            "Ill look into it",
+            "There are bugs and we need to accept that",
+            "Ill let it fix itself",
+            "That can be overseen when you know the functionality anyways",
+            "*kneels down and prays*",
+            "This project is under heavy development and refactoring on the backend",
+            "This has to do with one of the libraries used",
+            "user error",
+            "sorry too busy playing among us",
+            "I expected this to happen",
+            "It still functions as normal",
+            "It doesn't cause a crash",
+            "There are no compiler errors",
+            "It works and nothing else",
+            "Other developers are currently fixing this",
+            "If you really don't think about it, it works just fine",
+            "Well that is an issue...",
+            "This is a beta",
+            "My Entire team is putting their efforts into a potential patch",
+            "Patch coming in the next update",
+            "You arent using this right",
+            "I definitely knew about this",
+            "HR is looking into this",
+            "uhhhhhhhhhhhhhhhhhhh",
+        ]
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        function generate()
+        {
+            document.getElementById("yea_that_thing").innerHTML = responses[getRandomInt(responses.length)]
+        }
+    </script>
+    <h1 id="yea_that_thing"></h1>
+    <button onclick="generate()">clik m</button>
+</html>
